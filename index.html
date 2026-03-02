@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TALISYNC 2K26 | Kings Engineering College</title>
+  <meta name="description" content="TALISYNC 2K26 Mega Symposium by Department of Computer Science and Engineering, Kings Engineering College." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="talisman"></div>
+    <p>Entering TALISYNC Arena...</p>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <a href="#home" class="brand">TALISYNC 2K26</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav id="navMenu" class="nav-menu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#events">Events</a>
+      <a href="#coordinators">Coordinators</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScl3SFN3jiYCVxwtRbTEySEAyCEz3L-Ofc4pd2HQPqukh7vwQ/viewform" target="_blank" rel="noopener">Register</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-content reveal">
+        <p class="kicker">Department of Computer Science and Engineering</p>
+        <h1 class="insignia">TALISYNC 2K26</h1>
+        <p class="subtitle">A kung-fu tech arena where code, creativity, and competition collide.</p>
+        <div class="stat-grid">
+          <article class="stat-card">
+            <h3>Event Date</h3>
+            <p>March 13, 2026</p>
+          </article>
+          <article class="stat-card">
+            <h3>Prize Pool</h3>
+            <p>₹18,000</p>
+          </article>
+          <article class="stat-card">
+            <h3>Entry Fee</h3>
+            <p>₹100</p>
+          </article>
+        </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScl3SFN3jiYCVxwtRbTEySEAyCEz3L-Ofc4pd2HQPqukh7vwQ/viewform" target="_blank" rel="noopener" class="btn combat-btn bell-btn">Register Now</a>
+      </div>
+      <div class="smoke" aria-hidden="true"></div>
+    </section>
+
+    <div class="dojo-divider" aria-hidden="true"></div>
+
+    <section id="about" class="section reveal">
+      <h2>About</h2>
+      <p>
+        TALISYNC 2K26 is organized by the <strong>Department of Computer Science and Engineering</strong>,
+        <strong>Kings Engineering College</strong>.
+      </p>
+    </section>
+
+    <section id="events" class="section reveal">
+      <h2>Events</h2>
+      <p class="section-subtitle">Training missions, side-quests & arena battles.</p>
+
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-filter="all">All Sectors</button>
+        <button class="filter-tab" data-filter="technical">Technical</button>
+        <button class="filter-tab" data-filter="non-technical">Non-Technical</button>
+      </div>
+
+      <div class="card-grid" id="eventsGrid">
+
+        <div class="event-group" data-group="technical">
+          <h3 class="group-heading">Technical</h3>
+          <div class="group-grid">
+
+            <article class="event-card" data-category="technical" data-event="Dragon Speak" data-type="Technical">
+              <div class="event-poster"><span class="poster-label">Dragon Speak</span></div>
+              <div class="event-info">
+                <h3 class="event-name">Dragon Speak</h3>
+                <span class="event-tag">Technical</span>
+                <p class="event-desc">Command the Stage. Speak with Power. Let Your Voice Echo Through the Arena.</p>
+                <button class="event-explore">Explore</button>
+              </div>
+            </article>
+
+            <article class="event-card" data-category="technical" data-event="Shadow Debug" data-type="Technical">
+              <div class="event-poster"><span class="poster-label">Shadow Debug</span></div>
+              <div class="event-info">
+                <h3 class="event-name">Shadow Debug</h3>
+                <span class="event-tag">Technical</span>
+                <p class="event-desc">Hunt the Bugs. Trace the Shadows. Only the Sharpest Eyes Survive.</p>
+                <button class="event-explore">Explore</button>
+              </div>
+            </article>
+
+            <article class="event-card" data-category="technical" data-event="Rabbit Coders" data-type="Technical">
+              <div class="event-poster"><span class="poster-label">Rabbit Coders</span></div>
+              <div class="event-info">
+                <h3 class="event-name">Rabbit Coders</h3>
+                <span class="event-tag">Technical</span>
+                <p class="event-desc">Code Fast. Think Faster. Speed Is Your Greatest Weapon.</p>
+                <button class="event-explore">Explore</button>
+              </div>
+            </article>
+
+            <article class="event-card" data-category="technical" data-event="Design Levitation" data-type="Technical">
+              <div class="event-poster"><span class="poster-label">Design Levitation</span></div>
+              <div class="event-info">
+                <h3 class="event-name">Design Levitation</h3>
+                <span class="event-tag">Technical</span>
+                <p class="event-desc">Elevate Your Designs. Defy Gravity. Create Visual Masterpieces.</p>
+                <button class="event-explore">Explore</button>
+              </div>
+            </article>
+
+            <article class="event-card" data-category="technical" data-event="Mind Balance" data-type="Technical">
+              <div class="event-poster"><span class="poster-label">Mind Balance</span></div>
+              <div class="event-info">
+                <h3 class="event-name">Mind Balance</h3>
+                <span class="event-tag">Technical</span>
+                <p class="event-desc">Test Your Logic. Challenge Your Mind. Balance Is the Key to Victory.</p>
+                <button class="event-explore">Explore</button>
+              </div>
+            </article>
+
+            <article class="event-card" data-category="technical" data-event="Ox Warrior Round" data-type="Technical">
+              <div class="event-poster"><span class="poster-label">Ox Warrior Round</span></div>
+              <div class="event-info">
+                <h3 class="event-name">Ox Warrior Round</h3>
+                <span class="event-tag">Technical</span>
+                <p class="event-desc">Brute Force Meets Strategy. Power Through Every Challenge.</p>
+                <button class="event-explore">Explore</button>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="event-group" data-group="non-technical">
+          <h3 class="group-heading">Non-Technical</h3>
+          <div class="group-grid">
+
+            <article class="event-card" data-category="non-technical" data-event="Morph Meme" data-type="Non-Technical">
+              <div class="event-poster"><span class="poster-label">Morph Meme</span></div>
+              <div class="event-info">
+                <h3 class="event-name">Morph Meme</h3>
+                <span class="event-tag">Non-Technical</span>
+                <p class="event-desc">Shape-shift Ideas into Memes. Humor Meets Creativity.</p>
+                <button class="event-explore">Explore</button>
+              </div>
+            </article>
+
+            <article class="event-card" data-category="non-technical" data-event="Eternal Strikers" data-type="Non-Technical">
+              <div class="event-poster"><span class="poster-label">Eternal Strikers</span></div>
+              <div class="event-info">
+                <h3 class="event-name">Eternal Strikers</h3>
+                <span class="event-tag">Non-Technical</span>
+                <p class="event-desc">Strike Hard. Strike Fast. Dominate the Battlefield.</p>
+                <button class="event-explore">Explore</button>
+              </div>
+            </article>
+
+            <article class="event-card" data-category="non-technical" data-event="Rat Pulse" data-type="Non-Technical">
+              <div class="event-poster"><span class="poster-label">Rat Pulse</span></div>
+              <div class="event-info">
+                <h3 class="event-name">Rat Pulse</h3>
+                <span class="event-tag">Non-Technical</span>
+                <p class="event-desc">Quick Reflexes. Sharp Instincts. Feel the Pulse of the Arena.</p>
+                <button class="event-explore">Explore</button>
+              </div>
+            </article>
+
+            <article class="event-card" data-category="non-technical" data-event="Heat Beats" data-type="Non-Technical">
+              <div class="event-poster"><span class="poster-label">Heat Beats</span></div>
+              <div class="event-info">
+                <h3 class="event-name">Heat Beats</h3>
+                <span class="event-tag">Non-Technical</span>
+                <p class="event-desc">Feel the Rhythm. Own the Beat. Music Meets Combat.</p>
+                <button class="event-explore">Explore</button>
+              </div>
+            </article>
+
+            <article class="event-card" data-category="non-technical" data-event="Battle Realm" data-type="Non-Technical">
+              <div class="event-poster"><span class="poster-label">Battle Realm</span></div>
+              <div class="event-info">
+                <h3 class="event-name">Battle Realm</h3>
+                <span class="event-tag">Non-Technical</span>
+                <p class="event-desc">Enter the Arena. Fight for Glory. Only One Stands.</p>
+                <button class="event-explore">Explore</button>
+              </div>
+            </article>
+
+            <article class="event-card" data-category="non-technical" data-event="Astral Prompts" data-type="Non-Technical">
+              <div class="event-poster"><span class="poster-label">Astral Prompts</span></div>
+              <div class="event-info">
+                <h3 class="event-name">Astral Prompts</h3>
+                <span class="event-tag">Non-Technical</span>
+                <p class="event-desc">Navigate the Stars. Decode the Prompts. Creativity Unleashed.</p>
+                <button class="event-explore">Explore</button>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="coordinators" class="section reveal">
+      <h2>Coordinators</h2>
+      <div class="coord-grid">
+        <article class="glass-panel"><h3>Chairperson</h3><p>Dr. J. Nalini Selvaraj</p></article>
+        <article class="glass-panel"><h3>Directors</h3><p>Mr. S. Amirtharaj<br />Mrs. Merilyn Jemimah Amirtharaj</p></article>
+        <article class="glass-panel"><h3>Dean</h3><p>Mr. Pravin Mani</p></article>
+        <article class="glass-panel"><h3>Vice Principal & HOD</h3><p>Dr. D.C. Jullie Josephine</p></article>
+        <article class="glass-panel"><h3>Faculty Coordinators</h3><p>Mr. Thumilvannan S<br />Mr. Rajkumar E</p></article>
+        <article class="glass-panel"><h3>Student Coordinators</h3><p>Muralidharan M<br />Blessingraja P<br />Rithika K<br />Gayathri K</p></article>
+      </div>
+    </section>
+
+    <section id="register" class="section reveal register-section">
+      <h2>Register</h2>
+      <p>Co-Sponsored by <strong>Poovai Student Xerox</strong></p>
+      <div class="register-grid">
+        <div class="qr-placeholder" role="img" aria-label="QR code placeholder for registration">
+          <span>QR CODE</span>
+          <small>Place registration QR here</small>
+        </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScl3SFN3jiYCVxwtRbTEySEAyCEz3L-Ofc4pd2HQPqukh7vwQ/viewform" target="_blank" rel="noopener" class="btn combat-btn bell-btn">Start Registration</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Full-page Event Detail View -->
+  <div class="event-detail" id="eventDetail" aria-hidden="true">
+    <div class="detail-inner">
+      <button class="detail-back" id="detailBack">← Back to Events</button>
+
+      <div class="detail-layout">
+        <div class="detail-poster">
+          <span class="detail-poster-label" id="detailPosterLabel"></span>
+        </div>
+
+        <div class="detail-content">
+          <span class="detail-tag" id="detailTag"></span>
+          <h2 class="detail-title" id="detailTitle"></h2>
+
+          <div class="detail-meta" id="detailMeta"></div>
+
+          <div class="detail-section" id="detailAbout">
+            <h3>About the Event</h3>
+            <p id="detailDesc"></p>
+          </div>
+
+          <div class="detail-section" id="detailRulesSection">
+            <h3>Rules</h3>
+            <ul id="detailRules"></ul>
+          </div>
+
+          <div class="detail-section" id="detailEvalSection">
+            <h3>Evaluation</h3>
+            <ul id="detailEval"></ul>
+          </div>
+
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScl3SFN3jiYCVxwtRbTEySEAyCEz3L-Ofc4pd2HQPqukh7vwQ/viewform" target="_blank" rel="noopener" class="btn combat-btn detail-register">Register Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <audio id="bellSound" preload="none">
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_6d95f81dba.mp3?filename=service-bell-ring-14610.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
