@@ -340,6 +340,29 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") closeDetail();
 });
 
+/* ── Countdown ── */
+const targetDate = new Date("2026-03-13T09:00:00+05:30").getTime();
+const cdDays = document.getElementById("cdDays");
+const cdHours = document.getElementById("cdHours");
+const cdMins = document.getElementById("cdMins");
+const cdSecs = document.getElementById("cdSecs");
+
+function updateCountdown() {
+  const now = Date.now();
+  const diff = Math.max(0, targetDate - now);
+  const d = Math.floor(diff / 86400000);
+  const h = Math.floor((diff % 86400000) / 3600000);
+  const m = Math.floor((diff % 3600000) / 60000);
+  const s = Math.floor((diff % 60000) / 1000);
+  cdDays.textContent = String(d).padStart(2, "0");
+  cdHours.textContent = String(h).padStart(2, "0");
+  cdMins.textContent = String(m).padStart(2, "0");
+  cdSecs.textContent = String(s).padStart(2, "0");
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
+
 /* ── Loader ── */
 window.addEventListener("load", () => {
   setTimeout(() => loader.classList.add("hidden"), 700);
