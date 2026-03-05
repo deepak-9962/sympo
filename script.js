@@ -40,6 +40,7 @@ const eventData = {
     desc: "A technical debugging competition open to all departments. Designed for beginner to intermediate participants to test logical thinking, debugging skills, speed, and teamwork.\n\nLanguages: C, C++, Java, Python\n\nRound 1 – Debugging Challenge: Teams compete in groups of three. Same questions for each group. First team to finish correctly advances.\nRound 2 – Logic Modification: Correct a given program with minimal changes. No major structural edits allowed. Fastest correct team advances.\nRound 3 – Code Relay: One common question. Write the program on paper. Each member gets 1.5 minutes (total 4 minutes). All members must participate.",
     rules: [
       "Teams of 3 members",
+      "Laptop mandatory",
       "Languages allowed: C, C++, Java, Python",
       "Round 1: Same questions per group, first to finish advances",
       "Round 2: Minimal changes only, no structural edits",

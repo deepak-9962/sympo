@@ -511,6 +511,10 @@ h2 {
   z-index: 1;
 }
 
+.event-img ~ .poster-label {
+  display: none;
+}
+
 .event-info {
   padding: 1rem 1rem 1.1rem;
   display: flex;
@@ -704,6 +708,10 @@ h2 {
   height: 100%;
   object-fit: cover;
   z-index: 0;
+}
+
+.detail-poster-img ~ .detail-poster-label {
+  display: none;
 }
 
 .detail-poster-label {
