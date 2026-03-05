@@ -454,31 +454,229 @@ const observer = new IntersectionObserver(
 );
 revealElements.forEach((el) => observer.observe(el));
 
-/* ── GSAP Animations ── */
+/* ── GSAP Animations — Cartoon Martial Arts Style ── */
 if (window.gsap) {
   gsap.registerPlugin(ScrollTrigger);
 
+  /* Hero title — powerful entrance with glow pulse */
   gsap.from(".insignia", {
-    y: 18,
+    y: 40,
     opacity: 0,
-    duration: 0.9,
+    scale: 0.85,
+    duration: 1.2,
+    ease: "back.out(1.7)"
+  });
+
+  gsap.from(".kicker", {
+    y: -20,
+    opacity: 0,
+    duration: 0.7,
+    delay: 0.3,
     ease: "power2.out"
   });
 
+  gsap.from(".subtitle", {
+    y: 20,
+    opacity: 0,
+    duration: 0.7,
+    delay: 0.5,
+    ease: "power2.out"
+  });
+
+  /* Stat cards — slide up like rising scrolls */
+  gsap.from(".stat-card", {
+    y: 50,
+    opacity: 0,
+    duration: 0.6,
+    stagger: 0.15,
+    delay: 0.6,
+    ease: "back.out(1.4)"
+  });
+
+  /* Countdown units pop in */
+  gsap.from(".cd-unit", {
+    scale: 0,
+    opacity: 0,
+    duration: 0.5,
+    stagger: 0.1,
+    delay: 0.9,
+    ease: "back.out(2)"
+  });
+
+  /* Register button entrance */
+  gsap.from(".hero-content .combat-btn", {
+    scale: 0.5,
+    opacity: 0,
+    duration: 0.6,
+    delay: 1.2,
+    ease: "back.out(2)"
+  });
+
+  /* Event cards — scroll-rise with stagger */
   gsap.utils.toArray(".event-card").forEach((card, index) => {
     gsap.from(card, {
       scrollTrigger: {
         trigger: card,
         start: "top 88%"
       },
-      y: 24,
+      y: 60,
       opacity: 0,
-      duration: 0.5,
-      delay: index % 4 * 0.06,
-      ease: "power1.out"
+      rotation: -2 + (index % 3) * 2,
+      duration: 0.6,
+      delay: index % 4 * 0.08,
+      ease: "back.out(1.3)"
     });
   });
+
+  /* Glass panels — scroll entrance */
+  gsap.utils.toArray(".glass-panel").forEach((panel, i) => {
+    gsap.from(panel, {
+      scrollTrigger: {
+        trigger: panel,
+        start: "top 88%"
+      },
+      y: 40,
+      opacity: 0,
+      duration: 0.5,
+      delay: i * 0.08,
+      ease: "back.out(1.2)"
+    });
+  });
+
+  /* Section headings glow entrance */
+  gsap.utils.toArray("h2").forEach((heading) => {
+    gsap.from(heading, {
+      scrollTrigger: {
+        trigger: heading,
+        start: "top 85%"
+      },
+      x: -30,
+      opacity: 0,
+      duration: 0.6,
+      ease: "power2.out"
+    });
+  });
+
+  /* Filter tabs bounce in */
+  gsap.from(".filter-tab", {
+    scrollTrigger: {
+      trigger: ".filter-tabs",
+      start: "top 85%"
+    },
+    y: 20,
+    opacity: 0,
+    stagger: 0.08,
+    duration: 0.4,
+    ease: "back.out(1.5)"
+  });
 }
+
+/* ── Button Bounce Animation on Hover ── */
+document.querySelectorAll(".combat-btn, .event-explore, .filter-tab").forEach((btn) => {
+  btn.addEventListener("mouseenter", () => {
+    if (window.gsap) {
+      gsap.to(btn, { scale: 1.06, duration: 0.2, ease: "back.out(2)" });
+    }
+  });
+  btn.addEventListener("mouseleave", () => {
+    if (window.gsap) {
+      gsap.to(btn, { scale: 1, duration: 0.3, ease: "power2.out" });
+    }
+  });
+});
+
+/* ── Spark Effect on Button Click ── */
+document.querySelectorAll(".combat-btn").forEach((btn) => {
+  btn.style.position = "relative";
+  btn.style.overflow = "hidden";
+  btn.addEventListener("click", (e) => {
+    for (let i = 0; i < 6; i++) {
+      const spark = document.createElement("span");
+      spark.className = "spark-effect";
+      const rect = btn.getBoundingClientRect();
+      spark.style.left = (e.clientX - rect.left - 10) + "px";
+      spark.style.top = (e.clientY - rect.top - 10) + "px";
+      spark.style.animationDelay = (i * 0.05) + "s";
+      btn.appendChild(spark);
+      setTimeout(() => spark.remove(), 600);
+    }
+  });
+});
+
+/* ── Brand Logo Talisman Spin Easter Egg ── */
+const brandEl = document.querySelector(".brand");
+if (brandEl && window.gsap) {
+  brandEl.addEventListener("click", (e) => {
+    if (e.target.closest("a").getAttribute("href") === "#home") {
+      gsap.to(brandEl, {
+        rotation: 360,
+        duration: 0.6,
+        ease: "power2.inOut",
+        onComplete: () => gsap.set(brandEl, { rotation: 0 })
+      });
+    }
+  });
+}
+
+/* ── Floating Talisman Particles (Canvas) ── */
+(function initParticles() {
+  const canvas = document.createElement("canvas");
+  canvas.id = "particlesCanvas";
+  document.body.prepend(canvas);
+  const ctx = canvas.getContext("2d");
+
+  function resize() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+  resize();
+  window.addEventListener("resize", resize);
+
+  const symbols = ["☯", "✦", "◈", "⬡", "✧", "⚡"];
+  const particles = [];
+  const count = Math.min(25, Math.floor(window.innerWidth / 60));
+
+  for (let i = 0; i < count; i++) {
+    particles.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      vx: (Math.random() - 0.5) * 0.3,
+      vy: -Math.random() * 0.4 - 0.1,
+      size: Math.random() * 12 + 8,
+      symbol: symbols[Math.floor(Math.random() * symbols.length)],
+      opacity: Math.random() * 0.12 + 0.03,
+      rotation: Math.random() * 360,
+      rotSpeed: (Math.random() - 0.5) * 0.8,
+      color: ["#F4A261", "#E63946", "#2A9D8F", "#FF7A00"][Math.floor(Math.random() * 4)]
+    });
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    particles.forEach((p) => {
+      p.x += p.vx;
+      p.y += p.vy;
+      p.rotation += p.rotSpeed;
+
+      if (p.y < -20) { p.y = canvas.height + 20; p.x = Math.random() * canvas.width; }
+      if (p.x < -20) p.x = canvas.width + 20;
+      if (p.x > canvas.width + 20) p.x = -20;
+
+      ctx.save();
+      ctx.translate(p.x, p.y);
+      ctx.rotate((p.rotation * Math.PI) / 180);
+      ctx.globalAlpha = p.opacity;
+      ctx.font = `${p.size}px serif`;
+      ctx.fillStyle = p.color;
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillText(p.symbol, 0, 0);
+      ctx.restore();
+    });
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
 
 /* ── Dojo Bell Sound ── */
 document.querySelectorAll(".bell-btn").forEach((button) => {
