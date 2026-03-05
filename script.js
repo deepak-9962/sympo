@@ -10,6 +10,7 @@ const eventData = {
     type: "Technical",
     title: "Dragon Speak",
     subtitle: "Paper Presentation",
+    image: "images/dragon-speak.jpg",
     team: "Individual / Max 3 per team",
     desc: "Dragon Speak is a premier technical paper presentation platform designed to ignite innovation, analytical thinking, and technical excellence. This event provides a competitive stage for participants to present research-driven ideas, emerging technologies, and transformative solutions with clarity, confidence, and professional impact.\n\nUnleash your knowledge | Command the stage | Speak like a Dragon.",
     rules: [
@@ -34,6 +35,7 @@ const eventData = {
     type: "Technical",
     title: "Shadow Debug",
     subtitle: "Debugging Competition",
+    image: "images/shadow-debug.jpg",
     team: "3 members per team",
     desc: "A technical debugging competition open to all departments. Designed for beginner to intermediate participants to test logical thinking, debugging skills, speed, and teamwork.\n\nLanguages: C, C++, Java, Python\n\nRound 1 – Debugging Challenge: Teams compete in groups of three. Same questions for each group. First team to finish correctly advances.\nRound 2 – Logic Modification: Correct a given program with minimal changes. No major structural edits allowed. Fastest correct team advances.\nRound 3 – Code Relay: One common question. Write the program on paper. Each member gets 1.5 minutes (total 4 minutes). All members must participate.",
     rules: [
@@ -58,6 +60,7 @@ const eventData = {
     type: "Technical",
     title: "Rabbit Coders",
     subtitle: "Code Relay",
+    image: "images/rabbit-coders.jpg",
     team: "3 members per team",
     desc: "Get ready for the ultimate coding showdown!\nCode Relay is a three-stage technical battle that tests your knowledge, logic, debugging skills, and coding speed. From cracking quizzes to solving code puzzles and finally building a working program, this event is designed to challenge your brain at every level. Think fast, debug smart, and code like a pro!",
     rules: [
@@ -80,6 +83,7 @@ const eventData = {
     type: "Technical",
     title: "Design Levitation",
     subtitle: "UI/UX Challenge",
+    image: "images/design-levitation.jpg",
     team: "2–3 members per team",
     desc: "Design Levitation is a creative UI/UX design challenge that tests participants' ability to transform ideas into intuitive and visually appealing digital experiences.\nTeams will be given a real-world problem statement and must design a user-friendly mobile or web interface using design tools.\n\nThe event focuses on: Creativity, Usability & User Flow, Visual Consistency, and Problem-Solving Skills.\n\nParticipants must present their design approach and clearly explain the user journey within the given time.",
     rules: [
@@ -105,6 +109,7 @@ const eventData = {
     type: "Technical",
     title: "Mind Balance",
     subtitle: "Tech Quiz",
+    image: "images/mind-balance.jpg",
     team: "3 members per team",
     desc: "Are you ready to test your knowledge, logic, and presence of mind?\nMind Balance (Tech Quiz) is an intense multi-round technical competition designed to challenge your programming fundamentals, analytical thinking, and quick decision-making skills.\nFrom a written screening round to visual identification, rapid fire questioning, buzzer battles, and a surprise final challenge, this event pushes participants to stay focused, think fast, and answer smart under pressure.\n\nIt's not just about knowing the answer — it's about maintaining your mind balance in every round.",
     rules: [
@@ -128,6 +133,7 @@ const eventData = {
     type: "Technical",
     title: "Ox Warrior Round",
     subtitle: "Technical Interview",
+    image: "images/ox-warrior-round.jpg",
     team: "Individual Event",
     desc: "Ox Warrior Round is a technical interview–based competition inspired by strength, strategy, and intelligence. Participants will go through multiple levels including logical reasoning, core technical questioning, group discussion, and a final interview round.\n\nRound 1 – Logic Round: 3 aptitude questions + 1 coding output question (10 minutes)\nRound 2 – Technical Core Round: Choose one domain (DSA / DBMS / OS / CN / OOPS), 2 technical questions (3–4 min per participant)\nRound 3 – Group Discussion: 4–6 participants, 2 min prep + 8 min discussion\nFinal Round – Interview: Short technical + scenario-based interview",
     rules: [
@@ -149,6 +155,7 @@ const eventData = {
     type: "Non-Technical",
     title: "Morph Meme",
     subtitle: "The Ultimate Meme Challenge",
+    image: "images/morph-meme.jpg",
     team: "Max 3 members per team",
     desc: "Unleash your creativity and humor in this exciting meme creation competition!\nMorph Meme is a fun and engaging event where participants must create original and relatable memes based on the theme given on the spot. This event tests your creativity, sense of humor, trend awareness, and design skills.\n\nIf you can turn simple ideas into viral-level comedy, this is your stage! Make the audience laugh, impress the judges, and prove that you are the true Meme Master!",
     rules: [
@@ -174,6 +181,7 @@ const eventData = {
     type: "Non-Technical",
     title: "Eternal Strikers",
     subtitle: "Box Cricket",
+    image: "images/eternal-strikers.jpg",
     team: "5 members per team",
     desc: "Step into the arena where speed meets strategy and every ball counts!\nThe Box Cricket Showdown 2026 brings together passion, power-hitting, and pure adrenaline in a high-energy, fast-paced cricket clash. With short overs, quick reflexes, and electrifying moments, this isn't just cricket — it's a thrilling experience packed into every minute.",
     rules: [
@@ -194,6 +202,7 @@ const eventData = {
     type: "Non-Technical",
     title: "Rat Pulse",
     subtitle: "Connection",
+    image: "images/rat-pulse.jpg",
     team: "3 members per team",
     desc: "A fun non-technical team event testing observation, creativity & teamwork.\n\nRound 1: Identify the song connection from 4 images (5 sets, buzzer round). Top scoring teams qualify for Round 2.\nRound 2: One member acts a movie name (no speaking), others guess (3 chances).\n\nFocuses on quick thinking & team coordination.",
     rules: [
@@ -215,6 +224,7 @@ const eventData = {
     type: "Non-Technical",
     title: "Heat Beats",
     subtitle: "Musical Challenge",
+    image: "images/heat-beats.jpg",
     team: "4 members per team",
     desc: "Heat Beats is an exciting musical event that tests participants' listening skills and knowledge of songs. Teams must identify songs using clues like background music, images, and missing lyrics. The event progresses through multiple rounds and ends with an intense final face-off.\n\nRound 1: BGM Identification — identify the song from background music.\nRound 2: Picture Clue Round — guess the song from 3–4 images.\nRound 3: Missing Lyrics Round — identify missing lines from partial lyrics.\nRound 4: Final Face-off — top teams compete one-on-one with cast member clues.",
     rules: [
@@ -234,6 +244,7 @@ const eventData = {
     type: "Non-Technical",
     title: "Battle Realm",
     subtitle: "Gaming Night",
+    image: "images/battle-realm.jpg",
     team: "4 members per team (mandatory)",
     desc: "A unique multi-genre gaming tournament testing reflexes, strategy, and mental grit.\n\nStage 1 (Girls): Strategic board/card battle (Uno or Ludo) to find the top female squad.\nStage 1 (Boys): High-octane survival battle (Free Fire) to crown the top male squad.\nGrand Finale: The winning Girls' team and Boys' team face off in a tactical Chess showdown.",
     rules: [
@@ -254,6 +265,7 @@ const eventData = {
     type: "Non-Technical",
     title: "Astral Prompts",
     subtitle: "The Ultimate AI Prompt Showdown",
+    image: "images/astral-prompts.jpg",
     team: "2 members per team",
     desc: "Astral AI — The Ultimate Prompt Showdown\n\nTotal Rounds: 3 (Each round is an elimination round)\nAI tools allowed: ChatGPT, AI Image Generators, and similar AI platforms.\nMaximum 5 AI attempts allowed per round.",
     rules: [
@@ -291,6 +303,18 @@ function openDetail(eventName) {
   detailTag.textContent = d.type;
   detailTitle.textContent = d.title;
   detailDesc.textContent = d.desc;
+
+  /* Detail poster image */
+  const detailPoster = document.querySelector(".detail-poster");
+  const existingImg = detailPoster.querySelector(".detail-poster-img");
+  if (existingImg) existingImg.remove();
+  if (d.image) {
+    const img = document.createElement("img");
+    img.src = d.image;
+    img.alt = d.title;
+    img.className = "detail-poster-img";
+    detailPoster.insertBefore(img, detailPosterLabel);
+  }
 
   /* Meta cards */
   detailMeta.innerHTML = "";
