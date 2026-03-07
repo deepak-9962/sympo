@@ -223,6 +223,7 @@ body::after {
   display: grid;
   place-items: center;
   overflow: hidden;
+  padding: clamp(7rem, 12vw, 9rem) 0 5rem;
 }
 
 .hero-bg {
@@ -268,7 +269,12 @@ body::after {
 .hero-content {
   position: relative;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
   text-align: center;
+  width: min(1100px, 100%);
 }
 
 .kicker {
@@ -305,7 +311,7 @@ body::after {
 
 .subtitle {
   max-width: 650px;
-  margin: 0 auto 1.6rem;
+  margin: 0;
   color: var(--text-secondary);
   font-size: 1rem;
 }
@@ -315,7 +321,8 @@ body::after {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.2rem;
-  margin: 1.5rem auto;
+  margin: 0 0 1rem;
+  width: min(100%, 980px);
 }
 
 .stat-card,
@@ -387,8 +394,12 @@ body::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.6rem;
-  margin: 1.8rem 0;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  row-gap: 1rem;
+  margin: 1rem 0 1.2rem;
+  padding-top: 0.75rem;
+  width: min(100%, 760px);
 }
 
 .cd-unit {
@@ -1141,6 +1152,22 @@ h2::after {
   }
 
   .section { padding: 3.7rem 0; }
+
+  .hero {
+    min-height: auto;
+    padding: 6.5rem 0 4rem;
+  }
+
+  .hero-content {
+    gap: 1.2rem;
+  }
+
+  .countdown {
+    gap: 0.65rem;
+    row-gap: 0.85rem;
+    margin-top: 0.75rem;
+    padding-top: 0.5rem;
+  }
 
   .event-card::before { display: none; }
 }
